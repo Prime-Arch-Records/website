@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prime Arch Records – Free Tropical House for Creators</title>
+  <meta name="description" content="High‑quality royalty‑free Tropical House for creators — free with credit. By Prime Arch.">
+  <link rel="preconnect" href="https://plausible.io">
+  <script defer data-domain="primearchrecords.com" src="https://plausible.io/js/script.js"></script>
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="/assets/logo.svg" alt="Prime Arch Records" class="logo" />
+    <h1>Tropical House for Creators – Free to use</h1>
+    <p>By <strong>Prime Arch</strong>. Use in videos/streams. Credit required.</p>
+    <div class="cta-row">
+      <a class="cta" href="#library">Download Free Music</a>
+      <a class="cta alt" href="/docs/welcome-license.md" target="_blank" rel="noopener">Read the License</a>
+    </div>
+  </header>
+
+  <section class="license">
+    <h2>License (short)</h2>
+    <p>Free for YouTube, Twitch & social media (including monetization) with credit:
+      <em>“Music by Prime Arch – Spotify: https://open.spotify.com/artist/...”</em>.
+      Full terms in the <a href="/docs/welcome-license.md" target="_blank" rel="noopener">welcome & license</a>.
+    </p>
+  </section>
+
+  <section id="library" class="grid">
+    <!-- SONG TEMPLATE: copy this block and replace placeholders -->
+    <article class="card" data-track="SONG TITLE">
+      <img src="/assets/covers/song-cover.jpg" alt="SONG TITLE" class="cover" />
+      <h3>SONG TITLE</h3>
+      <p>GENRE · MOOD · BPM</p>
+      <div class="actions">
+        <a class="btn" href="https://open.spotify.com/track/SPOTIFY_TRACK_ID?utm_source=site&utm_medium=btn&utm_campaign=primearch_free"
+           onclick="plausible('play-spotify', {props:{track:'SONG TITLE'}})">▶ Play on Spotify</a>
+        <a class="btn" href="/songs/song-file.mp3"
+           onclick="plausible('download', {props:{track:'SONG TITLE',format:'mp3'}})">⬇ MP3</a>
+        <a class="btn" href="/songs/song-file.wav"
+           onclick="plausible('download', {props:{track:'SONG TITLE',format:'wav'}})">⬇ WAV</a>
+        <a class="btn" href="/songs/song-lyrics.pdf" target="_blank" rel="noopener">📄 Lyrics</a>
+      </div>
+    </article>
+
+    <!-- Example 1 -->
+    <article class="card" data-track="Clarity in Motion">
+      <img src="/assets/covers/clarity-in-motion.jpg" alt="Clarity in Motion" class="cover" />
+      <h3>Clarity in Motion</h3>
+      <p>Tropical House · Chill · 122 BPM</p>
+      <div class="actions">
+        <a class="btn" href="https://open.spotify.com/track/XXXX?utm_source=site&utm_medium=btn&utm_campaign=primearch_free"
+           onclick="plausible('play-spotify', {props:{track:'Clarity in Motion'}})">▶ Play on Spotify</a>
+        <a class="btn" href="/songs/clarity-in-motion.mp3"
+           onclick="plausible('download', {props:{track:'Clarity in Motion',format:'mp3'}})">⬇ MP3</a>
+        <a class="btn" href="/songs/clarity-in-motion.wav"
+           onclick="plausible('download', {props:{track:'Clarity in Motion',format:'wav'}})">⬇ WAV</a>
+        <a class="btn" href="/songs/clarity-in-motion-lyrics.pdf" target="_blank" rel="noopener">📄 Lyrics</a>
+      </div>
+    </article>
+
+    <!-- Example 2 -->
+    <article class="card" data-track="Built to Adapt">
+      <img src="/assets/covers/built-to-adapt.jpg" alt="Built to Adapt" class="cover" />
+      <h3>Built to Adapt</h3>
+      <p>Tropical House · Uplifting · 124 BPM</p>
+      <div class="actions">
+        <a class="btn" href="https://open.spotify.com/track/YYYY?utm_source=site&utm_medium=btn&utm_campaign=primearch_free"
+           onclick="plausible('play-spotify', {props:{track:'Built to Adapt'}})">▶ Play on Spotify</a>
+        <a class="btn" href="/songs/built-to-adapt.mp3"
+           onclick="plausible('download', {props:{track:'Built to Adapt',format:'mp3'}})">⬇ MP3</a>
+        <a class="btn" href="/songs/built-to-adapt.wav"
+           onclick="plausible('download', {props:{track:'Built to Adapt',format:'wav'}})">⬇ WAV</a>
+        <a class="btn" href="/songs/built-to-adapt-lyrics.pdf" target="_blank" rel="noopener">📄 Lyrics</a>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <p>© Prime Arch Records · Artist: Prime Arch · <a href="mailto:contact@primearchrecords.com">contact@primearchrecords.com</a></p>
+  </footer>
+
+  <script src="/scripts/modal.js"></script>
+</body>
+</html>

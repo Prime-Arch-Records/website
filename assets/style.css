@@ -1,0 +1,66 @@
+/* Prime Arch Records – minimal, responsive, clean */
+:root{
+  --bg:#0e0f14;
+  --fg:#e9ecf1;
+  --muted:#a9b0ba;
+  --card:#171922;
+  --accent:#63e6be;
+  --accent-2:#4dabf7;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+a{color:var(--accent-2);text-decoration:none}
+img{max-width:100%;display:block}
+header.hero{
+  padding:56px 20px 28px;
+  text-align:center;
+  display:grid;
+  gap:16px;
+  justify-items:center;
+}
+.logo{width:160px;height:auto;filter:drop-shadow(0 6px 18px #0008)}
+h1{margin:0;font-size:clamp(24px,4vw,40px);line-height:1.12}
+p{margin:0 0 8px 0;color:var(--muted)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.cta{
+  display:inline-block;
+  padding:12px 18px;
+  border-radius:999px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#081018;
+  font-weight:700;
+  box-shadow:0 6px 24px #000a;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.cta:hover{transform:translateY(-1px);box-shadow:0 10px 28px #000d}
+.cta.alt{background:#212636;color:var(--fg)}
+
+section.license{max-width:980px;margin:0 auto;padding:8px 20px 20px;text-align:center}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:18px;
+  padding:20px;
+  max-width:1200px;
+  margin:0 auto 40px;
+}
+.card{
+  background:linear-gradient(180deg,#1a1d27,#121420);
+  border:1px solid #22263a;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 10px 28px #0009;
+  display:flex;
+  flex-direction:column;
+}
+.cover{aspect-ratio:1/1;object-fit:cover}
+.card h3{margin:12px 14px 0;font-size:18px}
+.card p{margin:4px 14px 10px;color:var(--muted);font-size:14px}
+.actions{display:grid;gap:8px;padding:12px}
+.btn{
+  display:block;text-align:center;padding:10px 12px;border-radius:12px;
+  background:#1f2432;color:var(--fg);border:1px solid #2a3046;transition:all .15s ease;font-weight:600
+}
+.btn:hover{transform:translateY(-1px);border-color:#3b4770}
+footer{padding:30px 20px;border-top:1px solid #22263a;text-align:center;color:var(--muted)}

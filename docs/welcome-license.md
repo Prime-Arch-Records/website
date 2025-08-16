@@ -8,7 +8,7 @@
 - Editing/shortening for your video.
 
 **Credit required** (copy/paste):
-> Music by Prime Arch – Spotify: https://open.spotify.com/artist/REPLACE
+> Music by Prime Arch – Spotify: https://open.spotify.com/artist/7IcnaORPxZ03Hp8l9kKLQP
 
 ## Not allowed
 - Re‑upload to streaming platforms/DSPs (Spotify/Apple/etc.).
@@ -17,4 +17,4 @@
 
 ## Contact
 - Website: https://primearchrecords.com
-- Email: contact@primearchrecords.com
+- Email: patrik.hallen@primearch.se

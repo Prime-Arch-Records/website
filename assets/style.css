@@ -64,3 +64,29 @@ section.license{max-width:980px;margin:0 auto;padding:8px 20px 20px;text-align:c
 }
 .btn:hover{transform:translateY(-1px);border-color:#3b4770}
 footer{padding:30px 20px;border-top:1px solid #22263a;text-align:center;color:var(--muted)}
+
+/* Instrumental-knappar är gömda från start */
+.instrumental {
+  display: none;
+}
+
+/* Toggle-knappen */
+.toggle-inst {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+/* Hover-effekt */
+.toggle-inst:hover {
+  border-color: rgba(255,255,255,0.5);
+  color: #fff;
+  background: rgba(255,255,255,0.05);
+}
+

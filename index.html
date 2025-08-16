@@ -20,10 +20,25 @@
   <!-- Apple/iOS -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="stylesheet" href="/assets/style.css?v=1.0.1" />
   <style>
     .instrumental { display: none; }
-    .toggle-inst { margin-top: .25rem; font-size: .9rem; opacity:.85; }
+    .toggle-inst {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.8);
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      padding: 0.4rem 0.6rem;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+    .toggle-inst:hover {
+      border-color: rgba(255,255,255,0.5);
+      color: #fff;
+      background: rgba(255,255,255,0.05);
+    }
   </style>
 </head>
 <body>
@@ -47,20 +62,18 @@
 
   <section id="library" class="grid">
     <!-- Example 1 -->
-    <article class="card" data-track="Clarity in Motion">
-      <img src="/assets/covers/clarity-in-motion.jpg" alt="Clarity in Motion" class="cover" />
-      <h3>Clarity in Motion</h3>
+    <article class="card" data-track="Show just Enough">
+      <img src="/assets/covers/show-just-enough.png" alt="Show just Enough" class="cover" />
+      <h3>Show just Enough</h3>
       <p>Tropical House · Chill · 122 BPM</p>
       <div class="actions">
-        <a class="btn" href="https://open.spotify.com/track/XXXX">▶ Play on Spotify</a>
-        <a class="btn" href="/songs/clarity-in-motion.mp3">⬇ MP3</a>
-        <a class="btn" href="/songs/clarity-in-motion.wav">⬇ WAV</a>
+        <a class="btn" href="https://open.spotify.com/album/0VA0BIkBa8AfertMIRVwKZ">▶ Play on Spotify</a>
+        <a class="btn" href="/songs/show-just-enough.mp3">⬇ MP3</a>
 
         <!-- Instrumental hidden by default -->
-        <a class="btn instrumental" href="/songs/clarity-in-motion-instrumental.mp3">⬇ MP3 (Instrumental)</a>
-        <a class="btn instrumental" href="/songs/clarity-in-motion-instrumental.wav">⬇ WAV (Instrumental)</a>
+        <a class="btn instrumental" href="/songs/show-just-enough-instrumental.mp3">⬇ MP3 (Instrumental)</a>
 
-        <a class="btn" href="/songs/clarity-in-motion-lyrics.pdf" target="_blank" rel="noopener">📄 Lyrics</a>
+        <a class="btn" href="/songs/show-just-enough-lyrics.pdf" target="_blank" rel="noopener">📄 Lyrics</a>
       </div>
     </article>
 
@@ -72,34 +85,8 @@
       <div class="actions">
         <a class="btn" href="https://open.spotify.com/track/YYYY">▶ Play on Spotify</a>
         <a class="btn" href="/songs/built-to-adapt.mp3">⬇ MP3</a>
-        <a class="btn" href="/songs/built-to-adapt.wav">⬇ WAV</a>
 
         <!-- Instrumental hidden by default -->
         <a class="btn instrumental" href="/songs/built-to-adapt-instrumental.mp3">⬇ MP3 (Instrumental)</a>
-        <a class="btn instrumental" href="/songs/built-to-adapt-instrumental.wav">⬇ WAV (Instrumental)</a>
 
-        <a class="btn" href="/songs/built-to-adapt-lyrics.pdf" target="_blank" rel="noopener">📄 Lyrics</a>
-      </div>
-    </article>
-  </section>
-
-  <footer>
-    <p>© Prime Arch Records · Artist: Prime Arch · <a href="mailto:contact@primearchrecords.com">contact@primearchrecords.com</a></p>
-  </footer>
-
-  <script>
-  document.querySelectorAll('.card').forEach(card => {
-    const instBtns = card.querySelectorAll('.btn.instrumental');
-    if (!instBtns.length) return;
-
-    // skapa toggle-knapp
-    const toggle = document.createElement('button');
-    toggle.className = 'btn toggle-inst';
-    toggle.type = 'button';
-    toggle.textContent = 'Show Instrumental ▼';
-    const actions = card.querySelector('.actions') || card;
-    actions.appendChild(toggle);
-
-    let open = false;
-    toggle.addEventListener('click', () => {
-      open = !o
+        <a class="btn" href=

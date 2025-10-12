@@ -90,3 +90,17 @@ footer{padding:30px 20px;border-top:1px solid #22263a;text-align:center;color:va
   background: rgba(255,255,255,0.05);
 }
 
+.topnav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.topnav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-weight: 500;
+}
+.topnav a:hover {
+  color: #fff;
+}
